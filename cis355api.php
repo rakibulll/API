@@ -34,20 +34,20 @@ function main()
     //Desecending order
     arsort($data);
 
-    echo '<html>';
-    echo '<head>';
-    echo '<title>COVID-19 API</title>';
-    echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
-    echo '<style>';
+    echo '<html>
+          <head>
+          <title>COVID-19 API</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>';
     echo "table {
         border: 1px solid black;
           border-collapse: collapse;
         }
         th, td {
-	border: 1px solid black;
-	}";
-    echo '</style>';
-    echo '</head>';
+			border: 1px solid black;
+	  	}";
+    echo '</style>
+          </head>';
 
     echo '<body onload="loadDoc()">';
 
@@ -62,12 +62,12 @@ function main()
     echo '<br><br>';
 
     //HTML Table
-    echo "<div><h2>Table</h2>";
-    echo "<table>";
-    echo "<tr>";
-    echo "<th>Country Name</th>";
-    echo "<th>Number of Deaths Cases</th>";
-    echo "</tr>";
+    echo "<div><h2>Table</h2>
+          <table>
+          <tr>
+          <th>Country Name</th>
+          <th>Number of Deaths Cases</th>
+          </tr>";
     foreach ($data as $country => $cases)
     {
         echo "<tr>";
@@ -75,13 +75,13 @@ function main()
         echo "<td>{$cases}</td>";
         echo "</tr>";
     }
-    echo "</table>";
-    echo '</div>';
+    echo "</table>
+          </div>";
 
     echo ' <br><br> <a target="_blank" href="https://github.com/rakibulll/API/blob/master/cis355api.php">Github Source Code</a>';
 
-    echo '</body>';
-    echo '</html>';
+    echo '</body>
+          </html>';
 }
 
 #-----------------------------------------------------------------------------

@@ -26,9 +26,9 @@ function main()
 
     $data = Array();
 
-    foreach ($obj->Countries)
+    foreach ($obj->Countries as $i)
     {
-        $data->Country = ->TotalDeaths;
+        $data[$i->Country] = $i->TotalDeaths;
     }
 
     //Desecending order

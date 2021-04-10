@@ -44,8 +44,8 @@ function main()
           border-collapse: collapse;
         }
         th, td {
-			border: 1px solid black;
-	  	}";
+	border: 1px solid black;
+	}";
     echo '</style>';
     echo '</head>';
 

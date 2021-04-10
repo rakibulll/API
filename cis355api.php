@@ -66,7 +66,7 @@ function main()
           <table>
           <tr>
           <th>Country Name</th>
-          <th>Number of Deaths Cases</th>
+          <th>Number of Death Cases</th>
           </tr>";
     foreach ($data as $country => $cases)
     {
